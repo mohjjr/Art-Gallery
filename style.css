@@ -1,0 +1,58 @@
+:root {
+  --page-bg: #f4f1ec;
+  --card-bg: #ffffff;
+  --card-hover-bg: #efe8da;
+  --card-border: #d9d2c5;
+  --shadow-color: rgba(0, 0, 0, 0.22);
+  --card-shadow: 3px 3px 8px 1px var(--shadow-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--page-bg);
+  font-family: Georgia, "Times New Roman", serif;
+  text-align: center;
+}
+
+header {
+  background-image: url("images/gallery-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  min-height: 500px;
+  padding: 20px;
+}
+
+.logo {
+  background-image: url("images/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+}
+
+a {
+  display: inline-block;
+  vertical-align: top;
+  width: 15%;
+  margin: 20px 0.5%;
+  padding: 8px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--card-shadow);
+}
+
+a:hover {
+  background-color: var(--card-hover-bg);
+}
+
+a img {
+  width: 100%;
+  display: block;
+}
